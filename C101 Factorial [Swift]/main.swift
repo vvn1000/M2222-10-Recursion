@@ -13,10 +13,13 @@ let n = 7
 
 func calcFactorial(n: Int) -> Int {
     print("Calculating factorial(\(n))...")
+    // for any value of n at or below 1, the function returns 1
     if n <= 1 {
         print("Terminal case, returning 1.")
         return 1
     } else {
+        // "factor" is temporary variable
+        // while n > 1, this calculation is run 
         let factor = n * calcFactorial(n: n - 1)
         print("Non-terminal case, returning \(factor).")
         return factor
