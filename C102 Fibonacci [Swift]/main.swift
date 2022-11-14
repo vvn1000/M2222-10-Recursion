@@ -15,6 +15,7 @@ func fibonacci(n: Int) -> Int {
         print("Terminal case, returning 1.")
         return 1
     }
+    // use a temporary variable to hold the equation and later return
     let temp = fibonacci(n: n - 1) + fibonacci(n: n - 2)
     print("Non-terminal case, returning \(temp).")
     return temp
